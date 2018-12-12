@@ -1,0 +1,7 @@
+.previewer-container {
+  width: 100%;
+  height: calc(100%);
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
