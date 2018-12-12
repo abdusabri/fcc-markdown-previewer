@@ -1,25 +1,30 @@
 import React from "react";
 import "./editor.css";
 import TextField from "@material-ui/core/TextField";
+import Card from "@material-ui/core/Card";
 import { withStyles } from "@material-ui/core/styles";
-import { textFieldsStyles as classes } from "./text-fields-styles";
+import { textFieldsStyles } from "./text-fields-styles";
 
 const Editor = props => {
   return (
     <div className="editor">
-      <TextField
-        id="outlined-multiline-static"
-        label="Editor"
-        multiline
-        rows="4"
-        defaultValue="Default Value"
-        className={classes.textField}
-        margin="normal"
-        variant="outlined"
-        disabled
-      />
+      <Card style={{ height: "100%" }}>
+        <TextField
+          id="outlined-multiline-static"
+          multiline
+          rows="4"
+          defaultValue="Default Value"
+          classes={{
+            root: props.classes.root
+          }}
+          margin="none"
+          fullWidth
+          variant="outlined"
+          autoFocus
+        />
+      </Card>
     </div>
   );
 };
 
-export default withStyles(classes)(Editor);
+export default withStyles(textFieldsStyles)(Editor);

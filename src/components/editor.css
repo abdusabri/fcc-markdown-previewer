@@ -1,9 +1,5 @@
 .editor {
-  box-sizing: border-box;
   display: block;
   text-align: center;
-  width: 1fr;
-  height: 100%;
-  background-color: aqua;
-  margin: 0;
+  width: 50%;
 }
