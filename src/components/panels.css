@@ -24,3 +24,10 @@
   font: inherit;
   max-height: 690px;
 }
+
+pre {
+  background-color: aliceblue;
+}
+code {
+  background-color: aliceblue;
+}
