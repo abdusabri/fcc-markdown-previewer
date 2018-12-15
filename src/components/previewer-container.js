@@ -6,7 +6,7 @@ import { parseTextToMarkdown } from "../utils/markdown-parser";
 
 class PreviewerContainer extends Component {
   state = {
-    text: "Default text!",
+    text: "",
     markedText: ""
   };
 

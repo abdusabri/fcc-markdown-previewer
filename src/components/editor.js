@@ -1,8 +1,7 @@
 import React from "react";
-import "./panel.css";
+import "./panels.css";
 import Paper from "@material-ui/core/Paper";
 import CardHeader from "@material-ui/core/CardHeader";
-import { textareaStyles } from "./textarea-styles";
 import PropTypes from "prop-types";
 
 const Editor = ({ text, onChange }) => {
@@ -12,7 +11,7 @@ const Editor = ({ text, onChange }) => {
       <Paper style={{ height: "100%" }}>
         <textarea
           id="editor"
-          style={textareaStyles}
+          className="markdown-container"
           value={text}
           onChange={onChange}
         />

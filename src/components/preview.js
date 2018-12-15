@@ -1,16 +1,22 @@
 import React from "react";
-import "./panel.css";
+import "./panels.css";
 import Paper from "@material-ui/core/Paper";
 import CardHeader from "@material-ui/core/CardHeader";
-import { textareaStyles } from "./textarea-styles";
 import PropTypes from "prop-types";
+import Parser from "html-react-parser";
+import { Scrollbars } from "react-custom-scrollbars";
 
 const Preview = ({ text }) => {
   return (
     <div className="panel">
       <CardHeader title="Preview" />
+
       <Paper style={{ height: "100%" }}>
-        <textarea id="preview" style={textareaStyles} disabled value={text} />
+        <Scrollbars autoHide>
+          <div id="preview" className="markdown-container">
+            {Parser(text)}
+          </div>
+        </Scrollbars>
       </Paper>
     </div>
   );

@@ -1,0 +1,26 @@
+/* 
+** styles used by the editor and/or preview components,
+** each of which are considered a panel
+*/
+
+.panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 49%;
+}
+
+/* 
+** both the textarea of the editor panel, and the container
+** of the parsed elements are considered to be of the same
+** core class of markdown-container
+*/
+.markdown-container {
+  box-sizing: "border-box";
+  width: 94%;
+  height: 95%;
+  margin: 1rem;
+  resize: none;
+  font: inherit;
+  max-height: 690px;
+}
