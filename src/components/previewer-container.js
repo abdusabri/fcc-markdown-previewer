@@ -7,7 +7,6 @@ class PreviewerContainer extends Component {
   render() {
     return (
       <div className="previewer-container">
-        {/* Markdown Previewer! */}
         <Editor />
         <Preview />
       </div>
