@@ -11,6 +11,7 @@ export const parseTextToMarkdown = text => {
     sanitizer: sanitizeHtml,
     highlight: function(code) {
       return hljs.highlightAuto(code).value;
-    }
+    },
+    breaks: true
   });
 };
